@@ -39,6 +39,15 @@ model Transaction {
   @@unique([transactionId])
   @@index([transferState])
   @@index([transactionType])
+  @@index([sourceAmount])
+  @@index([sourceCurrency])
+  @@index([targetAmount])
+  @@index([targetCurrency])
+  @@index([transferSettlementWindowId])
+  @@index([errorCode])
+  @@index([createdAt])
+  @@index([payeeDFSP])
+  @@index([payerDFSP])
   @@map("transaction")
 }
 
